@@ -24,13 +24,44 @@ img {
   margin: 0 auto 60px auto;
 }
 
-span {
+span,
+#countdown {
   display: block;
   font-size: 25px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 5px;
   margin-bottom: 60px;
+}
+span .heures,
+span .jours,
+#countdown .heures,
+#countdown .jours {
+  display: inline-block;
+}
+@media (max-width: 500px) {
+  span,
+#countdown {
+    font-size: 14px;
+  }
+  span .heures,
+span .jours,
+#countdown .heures,
+#countdown .jours {
+    display: block;
+  }
+}
+span .separateur,
+#countdown .separateur {
+  display: inline-block;
+  margin: 0 1.5rem;
+  color: #46AC34;
+}
+@media (max-width: 500px) {
+  span .separateur,
+#countdown .separateur {
+    display: none;
+  }
 }
 
 .container {
